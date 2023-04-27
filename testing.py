@@ -49,16 +49,4 @@ train0['odometer'] = train0['odometer'].astype(int)
 
 # EDA
 
-fig, ax = plt.subplots(1,3)
 
-ax[0].hist(x[y==0, 2], color='r')
-ax[0].set(title=classes[0])
-
-ax[1].hist(x[y==1, 2], color='b')
-ax[1].set(title=classes[1])
-
-ax[2].hist(x[y==2, 2], color ='g')
-ax[2].set(title=classes[2])
-
-plt.show()
-plt.close()
