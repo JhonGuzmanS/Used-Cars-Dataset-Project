@@ -16,6 +16,7 @@ valid_part = 0.3
 #pd.set_option('max_columns',20)
 pd.set_option('display.max_columns', None)
 
+# Note: 'vehicles.csv' is the original dataset(~2GB) ___ 'vehicles.csv' is the updated one with the removal of colomns listed on line 22 
 train0 = pd.read_csv('vehicles.csv')
 
 drop_columns = ['url', 'region_url', 'title_status', 'VIN', 'size', 'image_url', 'description', 'lat', 'long', 'posting_date', 'county', 'type']
